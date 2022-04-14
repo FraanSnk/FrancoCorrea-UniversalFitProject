@@ -1,0 +1,66 @@
+.objetivos {
+   background: #f2f2f2;
+}
+
+.galeria-obj {
+   width: 100%;
+   margin: auto;
+   padding: 40px 0;
+   display: grid;
+   grid-template-columns: 40% 80%;
+   gap: 10px;
+   justify-content: end;
+}
+
+.banner-contenedor {
+   width: 100%;
+   display: grid;
+   justify-items: end;
+}
+
+.banner-img {
+   width: 50%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 5);
+
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+   }
+}
+
+.galeria-obj-contenedor {
+   height: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+}
+
+.imagen-obj {
+   height: 250px;
+   padding-right: 1px;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 5);
+}
+
+.imagen-obj {
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+   }
+}
+
+.zoom {
+   transition: transform .2s;
+
+   &:hover {
+      transform: scale(1.5);
+   }
+}

@@ -1,4 +1,4 @@
-.headerIndex {
+@mixin headerFacha {
    width: 100%;
    height: 600px;
    background: #333333;
@@ -12,60 +12,24 @@
    position: relative;
 }
 
+.headerIndex {
+   @include headerFacha();
+}
+
 .headerRutinas {
-   width: 100%;
-   height: 600px;
-   background: #333333;
-   /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, hsla(0, 80%, 48%, 0.7), hsla(0, 0%, 20%, 0.7)), url(../img/rutina.jpg);
-   /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, hsla(0, 80%, 48%, 0.7), hsla(0, 0%, 20%, 0.7)), url(../img/rutina.jpg);
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   background-size: cover;
-   background-attachment: fixed;
-   position: relative;
+   @include headerFacha();
 }
 
 .headerSuplementos {
-   width: 100%;
-   height: 600px;
-   background: #333333;
-   /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, hsla(0, 80%, 48%, 0.7), hsla(0, 0%, 20%, 0.7)), url(../img/suplementos.jpg);
-   /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, hsla(0, 80%, 48%, 0.7), hsla(0, 0%, 20%, 0.7)), url(../img/suplementos.jpg);
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   background-size: cover;
-   background-attachment: fixed;
-   position: relative;
+   @include headerFacha();
 }
 
 .headerAlimentacion {
-   width: 100%;
-   height: 600px;
-   background: #333333;
-   /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, hsla(0, 80%, 48%, 0.7), hsla(0, 0%, 20%, 0.7)), url(../img/comida.jpg);
-   /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, hsla(0, 80%, 48%, 0.7), hsla(0, 0%, 20%, 0.7)), url(../img/comida.jpg);
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   background-size: cover;
-   background-attachment: fixed;
-   position: relative;
+   @include headerFacha();
 }
 
 .headerDonaciones {
-   width: 100%;
-   height: 600px;
-   background: #333333;
-   /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, hsla(0, 80%, 48%, 0.7), hsla(0, 0%, 20%, 0.7)), url(../img/donaciones.jpg);
-   /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, hsla(0, 80%, 48%, 0.7), hsla(0, 0%, 20%, 0.7)), url(../img/donaciones.jpg);
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   background-size: cover;
-   background-attachment: fixed;
-   position: relative;
+   @include headerFacha();
 }
 
 header{

@@ -1,0 +1,229 @@
+@mixin flex($flex-direction, $justify, $align-items) {
+   flex-direction: $flex-direction;
+   justify-content: $justify;
+   align-items: $align-items;
+}
+
+@media screen and (max-width:952px) {
+   nav {
+      a {
+         font-size: 25px;
+         padding-left: 35px;
+      }
+   }
+}
+
+@media screen and (max-width:900px) {
+   header {
+      background-position: center;
+   }
+
+   nav {
+      a {
+         font-size: 24px;
+         padding-left: 35px;
+      }
+   }
+
+   .txtSml {
+      font-size: 2.2rem;
+   }
+
+   .txtMd {
+      font-size: 3.5rem;
+   }
+
+   .contenedor-sobre-nosotros {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .sobre-nosotros {
+      .contenido-textos {
+         width: 90%;
+      }
+   }
+
+   .galeria-obj {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .galeria-obj-contenedor {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+   }
+
+   .banner-contenedor {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .imagen-about-us {
+      width: 90%;
+   }
+
+   .imagen-obj {
+      width: 44%;
+   }
+
+   .banner-img {
+      width: 81%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+   }
+
+   .cards {
+      @include flex(column, center, center);
+   }
+
+   .cards {
+      .card {
+         width: 90%;
+      }
+   }
+
+   .cards {
+      .card {
+         &:first-child {
+            margin-bottom: 30px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width:862px) {
+   .checkbtn {
+      display: block;
+   }
+
+   .txtSml {
+      font-size: 2rem;
+   }
+
+   .txtMd {
+      font-size: 3rem;
+   }
+}
+
+@media screen and (max-width:500px) {
+
+   .txtSml {
+      font-size: 1.2rem;
+   }
+
+   .txtMd {
+      font-size: 2.5rem;
+   }
+
+   .textos-header {
+      h1 {
+         font-size: 35px;
+      }
+   }
+
+   .textos-header {
+      h2 {
+         font-size: 20px;
+      }
+   }
+
+   .imagen-about-us {
+      margin-bottom: 60px;
+      width: 99%;
+   }
+
+   .sobre-nosotros {
+      .contenido-textos {
+         width: 95%;
+      }
+   }
+
+   .banner-contenedor {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .galeria-obj-contenedor {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+   }
+
+   .imagen-obj {
+      width: 95%;
+   }
+
+   .banner-img {
+      width: 95%;
+   }
+
+   .cards {
+      .card {
+         height: 450px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   .cards {
+      .card {
+         img {
+            width: 90px;
+            height: 90px;
+         }
+      }
+   }
+
+   .contenedor-footer {
+      flex-direction: column;
+      border: none;
+   }
+
+   .content-foo {
+      margin-bottom: 20px;
+      text-align: center;
+   }
+
+   .content-foo {
+      h4 {
+         border: none;
+      }
+   }
+
+   .content-foo {
+      p {
+         color: #ccc;
+         border-bottom: 1px solid #f2f2f2;
+         padding-bottom: 20px;
+      }
+   }
+
+   .titulo-final {
+      font-size: 20px;
+   }
+}

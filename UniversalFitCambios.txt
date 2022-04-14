@@ -1,0 +1,9 @@
+Aplique algunos cambios en el codigo sass, agregue un Extend a una clase ".sizeDivTitulo"
+agregue un Map "paleta" y lo utilice en los siguientes clases: (".titulo", ".txtBlanco", ."txtNegro", ".fondoParrafo")
+
+
+MAP: Aplicado en _body.scss
+
+Mixin: Aplicado en _header.scss y _responsiveDesing.scss
+
+Extend: Aplicado en _body.scss

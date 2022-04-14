@@ -1,5 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+$paleta:(
+   'uno' : #b61b1b,
+   'dos' : white,
+   'tres' : black,
+   'cuatro' : rgba(224, 224, 224, .3),
+);
+
 body {
    font-family: 'Bebas Neue', cursive;
+}
+
+.wave {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+
+.slide {
+   margin-top: 10px;
+
+   img {
+      height: 90vh;
+      object-fit: fill;
+   }
+}
+
+.contenedor {
+   padding: 60px 0;
+   width: 90%;
+   max-width: 1000px;
+   margin: auto;
+   overflow: hidden;
+}
+
+.titulo {
+   color: map-get($map: $paleta, $key: 'uno');
+   font-size: 40px;
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.txtBsml {
+   font-size: 2rem;
+}
+
+.txtSml {
+   font-size: 3.5rem;
+}
+
+.txtMd {
+   font-size: 5rem;
+}
+
+.txtBig {
+   font-size: 25rem;
+}
+
+.txtBlanco {
+   color: map-get($map: $paleta, $key: 'dos');
+}
+
+.txtNegro {
+   color: map-get($map: $paleta, $key: 'tres');
+}
+
+.txtCenter {
+   text-align: center;
+}
+
+.txtMrg {
+   margin: 1rem;
+}
+
+.fondoParrafo {
+   background-color: map-get($map: $paleta, $key: 'cuatro');
+}
+
+.tablaCenter {
+   margin: auto;
+}
+
+.sizeDivH2 {
+   width: 100%;
+}
+
+.sizeDivTitulo {
+   @extend .sizeDivH2;
+   display: flex;
+   height: 430px;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.cards {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.cards{
+   .card {
+      background: #5a1c1c;
+      display: flex;
+      width: 46%;
+      height: 200px;
+      align-items: center;
+      justify-content: space-evenly;
+      border-radius: 5px;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+   }
+} 
+
+.cards{
+   .card{
+      img {
+         width: 100px;
+         height: 100px;
+         object-fit: cover;
+         border: 3px solid #fff;
+         border-radius: 50%;
+         display: block;
+      }
+   }
+} 
+
+.cards{
+   .card{
+      .contenido-texto-card {
+         width: 60%;
+         color: #fff;
+      }
+   }
+}
+
+.cards{
+   .card{
+      .contenido-texto-card h4 {
+         font-size: 1.1rem;
+         letter-spacing: 1px;
+      }
+   }
+}
+
+.cards{
+   .card{
+      .contenido-texto-card p {
+         font-weight: 300;
+         padding-top: 0;
+      }
+   }
 }
