@@ -152,3 +152,18 @@ body {
       }
    }
 }
+
+.card2{
+   flex-direction: row;
+ }
+ 
+ .cards{
+   .card{
+      .contenido-texto-card{
+         .tituloH4{
+            margin-right: 2rem;
+            font-size: 2rem;
+         } 
+      }
+   }
+}
